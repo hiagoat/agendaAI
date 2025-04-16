@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @font-face {
+    font-family: "montserrat-bold";
+    src: url(../font/montserrat/static/Montserrat-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "montserrat";
+    src: url(../font/montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+  
+  body {
+    font-family: "montserrat";
+    background-color: #1f1f1f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    background: rgb(65, 65, 65);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input[type="time"],
+  form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  form input[type="time"]:focus,
+  form input[type="text"]:focus {
+    border-color: #00b158;
+    box-shadow: 0 0 5px rgba(0, 177, 88, 0.5);
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background: #00b158;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #2e814a;
+  }
+  
+  #lista-tarefas {
+    list-style: none;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 6px solid #007bff;
+    border-radius: 5px;
+    transition: background 0.3s ease, border-left-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .task-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .task-item.completed {
+    background: #132a13;
+    border-left-color: #28a745;
+    text-decoration: line-through;
+    color: #6c757d;
+  }
+  
+  .task-info {
+    flex-grow: 1;
+    transition: color 0.3s ease;
+  }
+  
+  .task-time {
+    font-weight: bold;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .task-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .complete-btn,
+  .delete-btn,
+  .edit-btn {
+    background: transparent;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .complete-btn {
+    border: 1px solid #28a745;
+    color: #28a745;
+  }
+  
+  .complete-btn:hover {
+    background: #28a745;
+    color: white;
+  }
+  
+  .delete-btn {
+    border: 1px solid #dc3545;
+    color: #dc3545;
+  }
+  
+  .delete-btn:hover {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .edit-btn {
+    border: 1px solid #ffc107;
+    color: #ffc107;
+  }
+  
+  .edit-btn:hover {
+    background: #ffc107;
+    color: white;
+  }
+  
+  .tela-inicial {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "montserrat", sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .inicio-container {
+    text-align: center;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .inicio-container h1 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    transition: font-size 0.3s ease;
+  }
+  
+  .inicio-container button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #3fb365;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .inicio-container button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }  
