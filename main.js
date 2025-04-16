@@ -13,7 +13,7 @@ formulario.addEventListener("submit", function (evento) {
   if (hora && descricao) {
     adicionarTarefa(hora, descricao);
     campoHora.value = "";
-    campoDescricao.value = "";
+    campoDescricao.value = ""; 
   }
 });
 

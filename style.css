@@ -16,7 +16,7 @@
   }
   
   body {
-    font-family: "montserrat";
+    font-family: "montserrat"; 
     background-color: #1f1f1f;
     min-height: 100vh;
     display: flex;
@@ -200,4 +200,4 @@
   .inicio-container button:hover {
     background-color: #218838;
     transform: scale(1.05);
-  }  
+  }    
